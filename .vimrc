@@ -1,33 +1,36 @@
 set nocompatible
 filetype off
+syntax on
+
+let g:glsl_default_version = 'glsl460'
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-surround'
-Plugin 'majutsushi/tagbar'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-scripts/colorizer'
-Plugin 'Valloric/YouCompleteMe'
+Plug 'VundleVim/Vundle.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/colorizer'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'beyondmarc/glsl.vim'
 
-call vundle#end()
+call plug#end()
 
 execute pathogen#infect()
 filetype plugin indent on
 
-let g:javascript_plugin_jsdoc = 1
-
 set noswapfile
 set number
 set tabstop=4
-syntax on
 set smartindent
 set autoindent
 set ruler
 set encoding=utf-8
+set cursorline
 color jellybeans
 
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>

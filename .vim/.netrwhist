@@ -1,4 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/boot'
-let g:netrw_dirhist_2='/home/trietch/.vim'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/trietch/Documents/m2igai-2020-co/src/integrators/PracticalPathGuiding'
